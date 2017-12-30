@@ -5,16 +5,20 @@ import { DrawerNavigator } from 'react-navigation'
 import { Account } from './account'
 import { Tabs } from './tabs'
 
-export const Overlay = DrawerNavigator({
+const routes: object = {
     Tabs: {
         screen: Tabs,
         navigationOptions: {
             drawerLabel: 'Tabs'
         }
     }
-}, {
+}
+
+const config: object = {
     drawerOpenRoute: 'DrawerOpen',
     drawerCloseRoute: 'DrawerClose',
     drawerToggleRoute: 'DrawerToggle',
-    contentComponent: props => <Account />
-})
+    contentComponent: () => <Account />
+}
+
+export const Overlay = DrawerNavigator(routes, config)

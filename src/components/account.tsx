@@ -24,7 +24,7 @@ export class Account extends React.Component {
 
     /* --- public --- */
 
-    render() {
+    public render(): JSX.Element {
         return (
             <View style={styles.container}>
                 <Text style={styles.text}>{JSON.stringify(this.props, null, 4)}</Text>

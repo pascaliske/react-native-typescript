@@ -29,7 +29,7 @@ export class Feed extends React.Component {
     protected onLeftIconClick(): void {
         console.log('pressed')
 
-        this.props.navigation.navigate('DrawerToggle')
+        this.props.navigation.navigate('DrawerOpen')
     }
 
     /* --- public --- */

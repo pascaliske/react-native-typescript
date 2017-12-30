@@ -1,14 +1,9 @@
 import * as React from 'react'
-import { StyleSheet, Text, View, StatusBar } from 'react-native'
 
-import { Overlay } from './components/overlay'
-// import { Tabs } from './components/tabs'
+import { Overlay } from './src/components/overlay'
 
 export default class App extends React.Component {
-    render() {
-        return (
-            <Overlay />
-            // <Tabs />
-        )
+    public render(): JSX.Element {
+        return <Overlay />
     }
 }
